@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashley Toomey - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashley Toomey's professional portfolio showcasing skills, experience, and coding projects.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        /* Additional dark mode styles for other elements can be added here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ashley Toomey</h1>
+        <p>
+            📧 <a href="mailto:ashleytoomey@hotmail.com">ashleytoomey@hotmail.com</a> |
+            📞 <a href="tel:+447376457737">07376 457737</a>
+        </p>
+        <p>
+            🔗 <a href="https://www.linkedin.com/in/ashleytoomey" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            💻 <a href="https://github.com/AshJToomey" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+    </header>
+
+    <div class="pic-card">
+        <img src="{{ url_for('static', filename='images/ashley-profile.jpeg') }}" alt="Portrait of Ashley Toomey" loading="lazy">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <label for="darkModeToggle" class="theme-toggle">
+                    <input type="checkbox" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <span class="slider"></span> Dark Mode
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p><strong>Motivated and ambitious Computer Science MEng graduate and Python software development enthusiast</strong>, currently working as a Helpdesk Agent at Allwyn UK. Thrives on challenges and is actively seeking opportunities to expand technical skills, contribute to innovative projects, and engage with emerging technologies.</p>
+            <p>I’m an aspiring IT professional with a strong foundation in software development and a clear focus on continuous improvement. Currently working at Allwyn, I’ve taken the initiative to expand my technical skillset through independent study and project work, with the aim of transitioning into a technical role within the IT department.</p>
+            <p>My recent accomplishments include completing Microsoft’s SC-900 certification, studying key topics from CompTIA’s Security+, PenTest+, and Network+ courses, and building a portfolio website using Python and Flask. I’m also developing skills in object-oriented programming and API integration.</p>
+            <p>Outside of work, I maintain a disciplined routine focused on health, self-development, and consistency. I’m committed to long-term goals, including advancing my IT career, continuously learning, and achieving balance in both professional and personal life.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <article>
+                <h3>Helpdesk Agent – Allwyn UK, Watford</h3>
+                <p><em>Nov 2024 – Present</em></p>
+                <p>In my role at Allwyn, I delivered first-line support to both players and retailers, consistently ensuring compliance with Gambling Commission regulations while exceeding departmental KPIs. </p>
+                <p> I managed up to three live webchats concurrently, skillfully navigating multiple internal systems to resolve complex queries with speed and accuracy.</p>
+                <p> My responsibilities included handling a wide range of queries related to accounts, complaints, and winner claims, always with a strong focus on confidentiality, data protection, and delivering exceptional customer service. </p>
+                <p> I maintained over 95% DPA compliance and achieved a customer satisfaction rating above 78%, reflecting my commitment to high-quality service.</p>
+                <p> As a brand ambassador for Allwyn, I actively promoted the company’s products, services, and ongoing initiatives. </p>
+                <p> I demonstrated strong multitasking abilities, fast and accurate typing skills, and excellent written communication, all while thriving in a high-pressure, fast-paced environment. </p>
+                <p> With a proactive and customer-focused approach, I continuously looked for ways to improve support processes and outcomes. </p>
+                <p> I remained up to date on Allwyn’s games, product offerings, and operating procedures to ensure I could always provide helpful, reliable, and informed support.</p>
+            </article>
+
+            <article>
+                <h3>Coding Teacher & Mentor – Code Ninjas, Watford</h3>
+                <p><em>Jul 2024 – Nov 2024</em></p>
+                <p>As a Coding Instructor at Code Ninjas, I taught JavaScript and game development to children aged 4–13, using the center’s curriculum in an engaging and accessible way that encouraged creativity and curiosity</p>
+                <p>I provided personalized support and feedback tailored to each student’s learning pace, improving overall productivity by 15% and helping them progress through the coding curriculum with confidence.</p>
+                <p>I played an active role in creating and maintaining a positive, high-energy learning environment, ensuring the safety and well-being of all students during their time at the center. </p>
+                <p>I communicated regularly with parents, keeping them informed about their child’s progress and achievements.</p>
+                <p>Working closely with the Centre Manager, I helped expand the curriculum’s web design content by 25%, contributing to a more diverse and enriching learning experience.</p>
+                <p>I also led special projects and events designed to enhance digital literacy, foster teamwork, and further develop students’ coding and problem-solving skills.</p>
+
+
+            </article>
+
+            <article>
+                <h3>Warehouse Operative – Bespoke 77, Arlesey (Temp)</h3>
+                <p><em>Nov 2024</em></p>
+                <P>In my role as a Warehouse Operative, I was responsible for efficiently picking, packing, and preparing products for shipment, contributing to a 30% increase in overall warehouse productivity.  </P>
+                <P>I handled tasks such as loading advent calendars into boxes for secure transportation and manually loading and unloading containers to meet tight shipping deadlines. </P>
+                <P>I operated tape and gun machines as part of the packaging process and used electronic devices—including scanners and mobile phones—to accurately track inventory and shipments, resulting in a 15% improvement in inventory accuracy. </P>
+                <P>I also performed general warehouse duties, including stock management, system updates, and maintaining a clean and organized workspace to ensure smooth daily operations. </P>
+            </article>
+
+            <article>
+                <h3>BAME Student Advocate – University of Hertfordshire</h3>
+                <p><em>Sep 2021 – Dec 2023</em></p>
+                <p>As a BAME Student Advocate, I worked within a complex university structure to champion Equality, Diversity, and Inclusion (EDI), earning a Highly Commended Finalist nomination for Outstanding Contribution to EDI at the 2024 Student Union Awards. </p>
+                <p>In this role, I actively developed my leadership, communication, and presentation skills by engaging with students and staff through consultations, video campaigns, and panel discussions.  </p>
+                <p>I led BAME-focused careers events, including Q&A panels, employability sessions, and motivational talks, which contributed to a 20% increase in student engagement. </p>
+                <p>I conducted focus groups to gather and present feedback on the lived experiences of BAME students and played a key role in the BAME Student Success Working Group, helping shape university initiatives and guide decision-making. </p>
+                <p>I also supported academic departments by reviewing curriculum modules and raising awareness of the support and resources available to BAME students. </p>
+            </article>
+
+            <article>
+                <h3>Crew Member – McDonald’s, London Colney</h3>
+                <p><em>May 2019 – Aug 2021</em></p>
+                <p>Delivered high-quality customer service in a fast-paced, customer-focused environment. </p>
+                <p>Responsibilities included serving meals, maintaining a clean and hygienic dining area, and operating tills with accurate cash handling. </p>
+                <p>Consistently contributed to team performance and supported improvements in cleanliness standards by 15%. </p>
+                <p>Recognised for outstanding service and teamwork with the Employee of the Month award – January 2021. </p>
+            </article>
+        </section>
+
+        <section id="qualifications">
+            <h2>Qualifications</h2>
+            
+            <ul>
+                <article>
+                    <h3>Cyber Security Career Programme</h3>
+                    <p><em>Ongoing</em></p>
+                    <p>An online training programme designed to equip me with industry-recognised certifications and practical knowledge required for a career in cyber security. The course covers a broad range of essential topics and technical skills relevant to the field. </p>
+                    <p><strong>The modules on the course are:</strong></p>
+                    <ul>
+                        <li>Introduction to Python</li>
+                        <li>CompTIA Security+</li>
+                        <li>Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals</li>
+                        <li>Microsoft AZ-900 Microsoft Azure Fundamentals</li>
+                        <li>CompTIA Network+</li>
+                        <li>CompTIA PenTest+</li>
+                        <li>CompTIA Cybersecurity Analyst (CySA+)</li>
+                        <li>Unix Administration Basics</li>
+                        <li>CompTIA IT Fundamentals</li>
+                        <li>CompTIA A+</li>
+                    </ul>
+                 <article>
+
+                 <article>
+                     <h3>MEng in Computer Science, 2:1</h3>
+                     <p><em> University of Hertfordshire (2020–2024)</em></p>
+                     <p>I studied my Integrated Master's Engineering degree in Computer Science at the University of Hertfordshire in Hatfield, Hertfordshire.</p>
+                     <p><strong>The modules on the course are:</strong></p>
+                     <ul>
+                         <li>Human Dimensions of Computing</li>
+                         <li>Models and Methods in Computing</li>
+                         <li>Programming</li>
+                         <li>Operating Systems and Networks</li>
+                         <li>Algorithms and Data Structures</li>
+                         <li>Computer Science Development Exercise</li>
+                          <li>Database Concepts</li>
+                          <li>Artificial Intelligence</li>
+                          <li>Contemporary Issues</li>
+                          <li>The C Family</li>
+                          <li>Strategic IT Management</li>
+                          <li>Concurrency</li>
+                          <li>Programming Paradigms</li>
+                          <li>User Experience</li>
+                          <li>Responsible Technologies</li>
+                          <li>Computer Systems Security</li>
+                          <li>Advanced Database Topics</li>
+                          <li>Information Security Management</li>
+                          <li>Master's Project</li>
+                          <li>Measures and Models for Software Engineering</li>
+                     </ul>
+                 <article>
+
+                 <article>
+                    <h3>BTEC IT Level 3</h3> 
+                    <p><em>West Herts College (2018–2020)</em></p>
+                    <p>I studied my College BTEC Level 3 in Information Technology at the West Herts College in Hemel Hempstead, Hertfordshire.</p>
+                    <p><strong>The modules on the course are:</strong></p>
+                    <ul>
+                        <li>Cisco CCNA1</li>
+                        <li>Digital Graphics</li>
+                        <li>Computer Systems</li>
+                        <li>Communication and Employability Skills</li>
+                        <li>Event Driven Programming</li>
+                        <li>Computer Animation</li>
+                        <li>Database Concepts</li>
+                        <li>Artificial Intelligence</li>
+                        <li>IT Support</li>
+                        <li>Controlling Systems</li>
+                        <li>Website Development</li>
+                        <li>GAP Volunteering</li>
+                        <li>Information Systems</li>
+                        <li>Software Design Development</li>
+                        <li>Human Computer Interaction</li>
+                        <li>Impact of the Use of IT on Business Systems</li>
+                        <li>Organisational Systems Security</li>
+                        <li>System Analysis and Design</li>
+                        <li>Object Oriented Programming</li>
+                        <li>Database Design</li>
+                        <li>Computer Game Platforms and Technologies</li>
+                    </ul>
+                </article>
+
+            </ul>
+                <article>
+                    <h3>Full UK Driving License</h3>
+                    <p>I am a holder of Full UK Driving License and a fully capable driver. </p>
+                </article>
+        </section>
+
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python (Primary), JavaScript, HTML/CSS, Java, SQL</li>
+                <li><strong>Frameworks & Tools:</strong> Django (basic), NumPy, Pandas, Matplotlib, Git</li>
+                <li><strong>Systems & Platforms:</strong> Oracle ERP Cloud, Dynamics 365, WordPress, Zendesk</li>
+                <li><strong>Cloud & DevOps:</strong> Basic knowledge of Azure and AWS</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+
+                <div class="project-card">
+                    <h3>Football Match Performance Analyzer</h3>
+                    <p>This project is a python program used for analysing football player data using pandas and matplotlib. This project outputs comparative bar charts for visual performance analysis. I am an avid football and Arsenal fan, so I like the idea that project can be used by me to display specific data points and compare different players.</p>
+                    <img src="{{ url_for('static', filename='images/Football-Match-Performance-Analyzer.png') }}" alt="Screenshot of Football Performance Analyzer">
+                    <p><a href="https://github.com/AshJToomey/Ashley-s-Football-Match-Performance-Analyzer" target="_blank">View Repository</a></p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Random Boxing Combination Program</h3>
+                    <p>This project is a Python program which generates random boxing combinations for me to practice as someone who likes to keep fit and practice punches from time-to-time</p>
+                    <img src="{{ url_for('static', filename='images/Python-Random-Boxing-Combination-Program.png') }}" alt="Screenshot of Football Performance Analyzer">
+                    <p><a href="https://github.com/AshJToomey/Ashley-s-Random-Boxing-Combination-Program" target="_blank">View Repository</a></p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Python Calculator</h3>
+                    <p>This python project is a classic calculator project. It is a CLI calculator supporting addition, subtraction, multiplication, and division. This project demonstrates core Python fundamentals and clean CLI design.</p>
+                    <img src="{{ url_for('static', filename='images/Python-Calculator.png') }}" alt="Screenshot of CLI Python Calculator">
+                    <p><a href="https://github.com/AshJToomey/Ashley-s-Python-Calculator" target="_blank">View Repository</a></p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Joining Date Filter</h3>
+                    <p>This python project is a script that filters employees by joining date using a CSV dataset. This prject is useful for HR filtering and reporting tasks, it is able to show you data about specific workers by filtering through dates.</p>
+                    <img src="{{ url_for('static', filename='images/Joining-Date-Filter.png') }}" alt="Screenshot of Joining Date Filter Script">
+                    <p><a href="https://github.com/AshJToomey/Ashley-s-Joining-date-filter/tree/main" target="_blank">View Repository</a></p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> <a href="mailto:ashleytoomey@hotmail.com">ashleytoomey@hotmail.com</a></p>
+            <p><strong>Phone:</strong> 07376 457737</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ashleytoomey" target="_blank">linkedin.com/in/ashleytoomey</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/AshJToomey" target="_blank">github.com/AshJToomey</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ashley Toomey. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            toggle.checked = true;
+        }
+
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body>
+</html>
+
