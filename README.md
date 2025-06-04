@@ -1,127 +1,190 @@
-# Ashley Toomey - Personal Portfolio Website
+# Ashley Toomey – Portfolio Website
 
-This is the source code for Ashley Toomey's professional portfolio website, built using **Python** and **Flask**. The website showcases Ashley's skills, experience, qualifications, projects, and contact information in a clean, user-friendly format with a dark mode toggle feature.
-
----
-
-## Table of Contents
-
-- [About](#about)  
-- [Features](#features)  
-- [Technologies Used](#technologies-used)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Contributing](#contributing)  
-- [Contact](#contact)  
-- [License](#license)  
+A modern, responsive portfolio website built with Flask to showcase my software development projects, technical skills, and professional experience.
 
 ---
 
-## About
+## 🌟 Features
 
-This portfolio site presents Ashley Toomey’s background as a motivated Computer Science MEng graduate and software development enthusiast. It highlights professional experience, academic qualifications, technical skills, and personal coding projects, along with easy ways to connect via email, LinkedIn, and GitHub.
-
----
-
-## Features
-
-- Responsive design that works well on mobile and desktop  
-- Dark mode toggle with persistent theme preference using `localStorage`  
-- Sections including About, Experience, Qualifications, Skills, Projects, and Contact  
-- Project showcase with images and links to GitHub repositories  
-- Contact links with email, phone, LinkedIn, and GitHub  
-- SEO-friendly meta tags and smooth scrolling navigation  
+- **Interactive Project Carousel** – Navigate through 5 coding projects with smooth horizontal scrolling  
+- **Dark Mode Toggle** – Switch between professional dark/light themes  
+- **Responsive Design** – Optimized for desktop, tablet, and mobile  
+- **Collapsible Sections** – Expandable content areas for better UX  
+- **Contact Form** – Functional form with validation and feedback  
+- **Professional Stats** – Quick overview of experience and project count  
+- **Social Integration** – Links to LinkedIn, GitHub, and direct contact  
 
 ---
 
-## Technologies Used
+## 🚀 Projects Showcased
 
-- **Frontend:** HTML5, CSS3 (with external stylesheet), JavaScript (for dark mode toggle)  
-- **Backend:** Python with Flask web framework  
-- **Templates:** Jinja2 templating engine (Flask default)  
-- **Static Assets:** Images, favicon, CSS stored in `/static` directory  
+- **Football Match Performance Analyzer** – GUI app for football match stats  
+- **Employee Joining Date Filter** – Date range filter for employee data  
+- **Python Calculator** – Desktop GUI calculator  
+- **Boxing Combination Generator** – Random combo generator for training  
+- **Football-Themed Registration System** – Event-driven app with pytest  
 
 ---
 
-## Installation
+## 🛠️ Technology Stack
 
-To run this portfolio site locally, follow these steps:
+- **Backend:** Python (Flask)  
+- **Frontend:** HTML5, CSS3, JavaScript  
+- **Styling:** Custom CSS, responsive grid layout  
+- **Icons:** Feather Icons  
+- **Deployment:** Gunicorn WSGI server  
 
-1. **Clone the repository:**
+---
 
+## 📋 Prerequisites
+
+- Python 3.7+  
+- pip (Python package manager)  
+
+---
+
+## 🔧 Installation & Setup
+
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/AshJToomey/ashley-portfolio.git
-   cd ashley-portfolio
+   git clone https://github.com/AshJToomey/portfolio-website.git
+   cd portfolio-website
 
-2. Set up a Python virtual environment:
+2. Create a virtual environment
 
-python3 -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+python -m venv venv
+source venv/bin/activate     # On Windows: venv\Scripts\activate
 
-3. Install dependencies:
+3. Install dependencies
 
-pip install flask
+pip install -r requirements-dev.txt
 
-4. Run the Flask app:
+4. Set environment variables
 
-flask run
+export SESSION_SECRET="your-secret-key-here"
 
-5. Open your browser and visit:
+5. Run the application
 
-http://127.0.0.1:5000/
+python app.py
 
-## Usage
-Navigate through the portfolio using the navigation menu
+6. Access the site
+Open your browser at: http://localhost:5000
 
-Toggle dark mode on/off with the switch in the navigation bar
+---
 
-Click on project links to view individual GitHub repositories
+## 🚀 Production Deployment
 
-Contact Ashley using the provided email, phone, LinkedIn, or GitHub links
+Use Gunicorn for production:
 
-## Project Structure
+gunicorn --bind 0.0.0.0:5000 --reuse-port --reload main:app
 
-ashley-portfolio/
+---
 
-│
+## 📁 Project Structure
 
-├── app.py                  # Flask application entry point
-
-├── templates/
-
-│   └── index.html          # Main HTML template using Jinja2
-
+portfolio-website/
+├── app.py
+├── main.py
+├── README.md
+├── requirements-dev.txt
 ├── static/
-
 │   ├── css/
-
-│   │   └── style.css       # External CSS file
-
+│   │   └── style.css
 │   ├── images/
+│   ├── js/
+│   │   └── script.js
+│   └── Ashley_Toomey_CV_2025.pdf
+├── templates/
+│   ├── layout.html
+│   └── index.html
 
-│   │   └── ashley-profile.jpeg
+---
 
-│   ├── favicon.png
+## ✨ Key Features Explained
 
-│   └── js/
+🎞️ Project Carousel
+- Horizontal scroll
 
-│       └── (optional JS files if any)
+- Navigation arrows + dot indicators
 
-└── README.md
+- Fully responsive layout
 
-## Contributing
-Contributions, suggestions, and improvements are welcome!
-Feel free to open an issue or submit a pull request.
+🌙 Dark Mode
 
-## Contact
-Ashley Toomey
-📧 ashleytoomey@hotmail.com
-📞 07376 457737
-🔗 LinkedIn
-💻 GitHub
+- Toggle between light/dark
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+- Smooth transitions
 
-© 2025 Ashley Toomey. All rights reserved.
+- Remembers user preference
+
+✉️ Contact Form
+
+- Form validation (client + server)
+
+- Feedback on success or error
+
+📱 Responsive Design
+
+- Mobile-first
+
+- Flexible grid
+
+- Optimized fonts/images
+
+---
+
+## 🎨 Customization
+
+➕ Add New Projects
+Edit the projects list in app.py:
+
+
+projects = [
+    {
+        "title": "New Project",
+        "description": "Brief summary...",
+        "image": "new_project.png",
+        "github": "https://github.com/your-repo",
+        "tags": ["Python", "Flask"]
+    }
+]
+
+⚙️ Update Skills
+Modify the skills dictionary in app.py.
+
+🎨 Change Styles
+Edit static/css/style.css for colors, layout, fonts.
+
+---
+
+## 🌐 Browser Support
+- Chrome (latest)
+
+- Firefox (latest)
+
+- Safari (latest)
+
+- Edge (latest)
+
+---
+
+## 🤝 Contributing
+This is a personal project. Suggestions are welcome via GitHub Issues or by contacting me directly.
+
+---
+
+## 📄 License
+Licensed under the MIT License.
+
+---
+
+## 📞 Contact
+- Email: ashleytoomey@hotmail.com
+
+- Phone: 07376 457737
+
+- LinkedIn: linkedin.com/in/ashley-toomey-534601175
+
+- GitHub: github.com/AshJToomey
+
+Built with ❤️ by Ashley Toomey
